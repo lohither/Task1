@@ -1,0 +1,81 @@
+#!/usr/bin/bash
+
+echo ================================ >> comp_log.txt
+echo     COMPUTER LOG    >> comp_log.txt
+echo ================================ >> comp_log.txt
+
+v=$(uptime)
+z=$(df -h)
+g=$(free -m)
+d=$(top -n 1 -d 1 | grep "%Cpu")
+a=$(ps -eo pcpu,pid,user,args | sort -r -k1 | head -2)
+x=$(sudo netstat -at | grep "LISTEN")
+f=$(netstat -ant)
+b=$( ps aux)
+
+echo Uptime:  $v >> comp_log.txt
+echo Disk Usage:  $z >> comp_log.txt
+echo Memory Usage: $g >> comp_log.txt
+echo Utilization:  $d >> comp_log.txt
+echo  Most Expensive Processes: $a >> comp_log.txt
+echo Open TCP ports: $x >> comp_log.txt
+echo Current connections: $f >> comp_log.txt
+echo Processes: $b >> comp_log.txt
+
+echo ================================ >> comp_log.txt
+
+
+
+
+
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+                                                                                                                                                                            0,0-1         All
