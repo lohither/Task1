@@ -1,0 +1,52 @@
+#!/usr/bin/bash
+
+#To run the script we use alias level3_run
+alias level3_run="nohup ./level3_1.sh & nohup: appending output to nohup.out"
+
+crontab -e
+0 18 * * * cd /home/lohith04 && ./cr_1.txt
+
+while true;
+do
+cpuge60=$( ps -aux | awk ' $3>60 { print $2 } ')
+while IFS= read -r pid;
+do
+echo "=============================================" >> process_log.txt
+echo "process ID: $pid" >> process_log.txt
+v=$(ps -aux | awk '$2==$pid { print $3 }')
+echo "CPU Usage: $v" >> process_log.txt
+echo "=============================================" >> process_log.txt
+kill $pid
+done <<< "$cpuge60"
+sleep 1
+done
+
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+-- INSERT --                                                                                                                                                                22,5          All
